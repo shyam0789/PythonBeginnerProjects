@@ -1,0 +1,3 @@
+[{"id": 1, "title": "Learn Python", "completed": true},
+  {"id": 2, "title": "Learn Pandas", "completed": false},
+  {"id": 3, "title": "Learn Numpy", "completed": false}]
