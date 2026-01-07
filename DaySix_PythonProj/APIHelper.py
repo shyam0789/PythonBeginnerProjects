@@ -1,22 +1,44 @@
 import requests
 
+
 class APIHelper:
-    def __init__(self,countryName):
-        self.countryName = countryName
-        self.url = f"https://restcountries.com/v3.1/name/{self.countryName}?fullText=True"
-        self.country_info = {}
+    def __init__(self, country_name):
+        self.country_name = country_name.strip()
+        self.url = f"https://restcountries.com/v3.1/name/{self.country_name}?fullText=True"
 
     def get_country_data(self):
-        print(self.url)
-        response = requests.get(self.url)
-        data = response.json()
-        self.country_info = {
-            "country_name":data[0]["name"]["official"],
-            "capital": data[0]["capital"][0],
-            "population": data[0]["population"],
-            "region":data[0]["region"],
-            "languages":data[0]["languages"]
-        }
-        return self.country_info
+        try:
+            response = requests.get(self.url, timeout=5)
 
+            # 1️⃣ HTTP validation
+            if response.status_code != 200:
+                print(f"[ERROR] API failed for {self.country_name}")
+                return None
 
+            data = response.json()
+
+            # 2️⃣ Data validation
+            if not data or not isinstance(data, list):
+                print(f"[ERROR] No data found for {self.country_name}")
+                return None
+
+            country = data[0]
+
+            # 3️⃣ Key validation
+            required_keys = ["name", "capital", "population", "region", "languages"]
+            for key in required_keys:
+                if key not in country:
+                    print(f"[ERROR] Missing key '{key}' for {self.country_name}")
+                    return None
+
+            return {
+                "country_name": country["name"]["official"],
+                "capital": country["capital"][0],
+                "population": country["population"],
+                "region": country["region"],
+                "languages": country["languages"]
+            }
+
+        except requests.exceptions.RequestException as e:
+            print(f"[ERROR] Network issue for {self.country_name}: {e}")
+            return None
