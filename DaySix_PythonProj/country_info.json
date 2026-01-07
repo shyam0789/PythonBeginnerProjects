@@ -1,0 +1,69 @@
+[
+ {
+  "country_name": "Republic of India",
+  "capital": "New Delhi",
+  "population": 1417492000,
+  "region": "Asia",
+  "languages": {
+   "eng": "English",
+   "hin": "Hindi",
+   "tam": "Tamil"
+  }
+ },
+ {
+  "country_name": "Kingdom of Sweden",
+  "capital": "Stockholm",
+  "population": 10605098,
+  "region": "Europe",
+  "languages": {
+   "swe": "Swedish"
+  }
+ },
+ {
+  "country_name": "Russian Federation",
+  "capital": "Moscow",
+  "population": 146028325,
+  "region": "Europe",
+  "languages": {
+   "rus": "Russian"
+  }
+ },
+ {
+  "country_name": "People's Republic of China",
+  "capital": "Beijing",
+  "population": 1408280000,
+  "region": "Asia",
+  "languages": {
+   "zho": "Chinese"
+  }
+ },
+ {
+  "country_name": "Islamic Republic of Pakistan",
+  "capital": "Islamabad",
+  "population": 241499431,
+  "region": "Asia",
+  "languages": {
+   "eng": "English",
+   "urd": "Urdu"
+  }
+ },
+ {
+  "country_name": "Italian Republic",
+  "capital": "Rome",
+  "population": 58927633,
+  "region": "Europe",
+  "languages": {
+   "ita": "Italian",
+   "cat": "Catalan"
+  }
+ },
+ {
+  "country_name": "French Republic",
+  "capital": "Paris",
+  "population": 66351959,
+  "region": "Europe",
+  "languages": {
+   "fra": "French"
+  }
+ }
+]
