@@ -1,0 +1,5 @@
+Celsius to Fahrenheit calculation
+Fahrenheit = (Celsius * 1.8) + 32
+
+Fahrenheit to Celsius calculation
+Celsius = (Fahrenheit - 32) / 1.8
