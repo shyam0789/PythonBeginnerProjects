@@ -1,0 +1,7 @@
+
+DATE  |  CATEGORY  | TITLE  |  AMOUNT
+01/01/2026  Fuel   Waco Expense   23.45
+DATE  |  CATEGORY  | TITLE  |  AMOUNT
+01/02/2026  Food   Waco Expense   234.02
+DATE  |  CATEGORY  | TITLE  |  AMOUNT
+01/03/2026  Stay   Waco Expense   308.14
