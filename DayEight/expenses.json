@@ -1,0 +1,18 @@
+{
+    "expense_title": "Waco Expense",
+    "category": "Fuel",
+    "amount": 23.45,
+    "transdate": "01/01/2026"
+}
+{
+    "expense_title": "Waco Expense",
+    "category": "Food",
+    "amount": 234.02,
+    "transdate": "01/02/2026"
+}
+{
+    "expense_title": "Waco Expense",
+    "category": "Stay",
+    "amount": 308.14,
+    "transdate": "01/03/2026"
+}
